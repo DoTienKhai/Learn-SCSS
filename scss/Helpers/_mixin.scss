@@ -1,0 +1,21 @@
+@mixin bgcInputStatistical($height, $bgrColor) {
+    height: $height;
+
+    background-color: $bgrColor;
+}
+
+@mixin lineStyle($brwidth, $height, $style, $bgcolor){
+    border-width: $brwidth;
+    height: $height;
+
+    border-style: solid;
+
+    color: $bgcolor;
+}
+
+@mixin hrStyle($width, $style, $bgColor) {
+    width: $width;
+
+    border-style: solid;
+    border-color: $bgColor;
+}

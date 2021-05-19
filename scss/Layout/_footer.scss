@@ -1,0 +1,34 @@
+.footer{
+    padding: 20px 106px;
+
+    display: flex;
+    justify-content: space-between;
+
+    background-color: $color-bgr-white-2;
+    &__infor{
+        width: 600px;
+        &-list{
+            list-style: none;
+
+            &-item{
+                margin: 10px;
+
+                font-size: $fs-14;
+                color: $color-text-black-2;
+            }
+        }
+    }
+
+    &__contact{
+        &-list{
+            list-style: none;
+            margin-right: 200px;
+            &-item{
+                margin: 10px;
+
+                font-size: $fs-14;
+                color: $color-text-black-2;
+            }
+        }
+    }
+}

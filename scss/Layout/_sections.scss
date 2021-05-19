@@ -1,0 +1,155 @@
+.section {
+  // Menu
+  &__menu {
+    height: 36px;
+
+    background-color: $color-green-2;
+    &-list {
+      display: flex;
+      justify-content: space-between;
+
+      list-style-type: none;
+
+      margin: 0 50px 0 112px;
+    }
+    &-item {
+      & a {
+        display: block;
+
+        padding: 0 8px;
+
+        text-decoration: none;
+
+        line-height: 36px;
+
+        color: $color-bgr-white-1;
+
+        font-size: $fs-13;
+        &:hover {
+          background-color: $color-green-3;
+        }
+      }
+    }
+  }
+  // Container
+  &__containers {
+    display: flex;
+
+    margin: 20px 0 0 108px;
+    &__content {
+      position: relative;
+      width: 506px;
+      &-main {
+        &-img {
+          width: 100%;
+          & img {
+            width: 100%;
+          }
+        }
+        &-title {
+          width: 490px;
+
+          background-color: $color-bgr-white-3;
+
+          position: absolute;
+          top: 310px;
+          left: 8px;
+
+          padding: 16px;
+
+          & a {
+            text-decoration: none;
+
+            font-size: $fs-22;
+            font-weight: $fw-600;
+
+            color: $color-text-black-1;
+
+            &:hover {
+              color: $color-blue-2;
+            }
+          }
+        }
+        &-detail {
+          position: absolute;
+
+          top: 390px;
+          & a {
+            color: $color-text-black-1;
+
+            font-weight: $fw-400;
+
+            text-decoration: none;
+          }
+        }
+        &-list {
+          position: absolute;
+
+          top: 476px;
+          left: 14px;
+          & a {
+            text-decoration: none;
+
+            font-weight: $fw-600;
+            font-size: $fs-14;
+
+            color: $color-text-black-1;
+
+            &:hover {
+              color: $color-blue-2;
+            }
+          }
+        }
+        &-item{
+          padding: 4px;
+        }
+      }
+    }
+    &__news {
+      width: 268px;
+
+      margin-left: 16px;
+
+      border-left: 1px solid $color-bgr-white-2;
+
+      padding-left: 20px;
+      & > hr {
+        @include hrStyle(100%, solid, $color-blue-2);
+
+        margin-bottom: 10px;
+      }
+      
+      &-title {
+        color: $color-blue-2;
+
+        font-weight: $fw-600;
+        font-size: $fs-14;
+      }
+
+      &-list {
+        padding-left: 16px;
+
+        list-style-type: disc;
+
+        color: $color-blue-2;
+      }
+      &-item {
+          padding: 5px 5px 5px 0;
+
+          border-bottom: 1px solid $color-border-white-1;
+        & a {
+          text-decoration: none;
+
+          font-size: $fs-12;
+          font-weight: $fw-600;
+
+          color: $color-text-black-2;
+
+          &:hover{
+              color: $color-blue-2;
+          }
+        }
+      }
+    }
+  }
+}
